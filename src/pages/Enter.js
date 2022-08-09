@@ -1,6 +1,8 @@
 const Enter = () => {
   return (
-    <div>Enter</div>
+    <div>
+        <img />
+    </div>
   )
 }
 export default Enter
