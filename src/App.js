@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Main from "./pages/Main";
+import Login from "./pages/Login";
+import Navbar from "./components/Navbar";
+import Chat from "./pages/Chat";
+import Detail from "./pages/Detail";
+import Post from "./pages/Post";
+import Write from "./pages/Write";
+import FirstLogin from "./pages/FirstLogin";
+import MyInfo from "./pages/MyInfo";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/detail/:postId" element={<Detail />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/write" element={<Write />} />
+        <Route path="/myinfo" element={<MyInfo />} />
+        <Route path="/firstlogin" element={<FirstLogin />} />
+      </Routes>
+    </>
   );
 }
 
