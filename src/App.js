@@ -11,6 +11,8 @@ import FirstLogin from "./pages/FirstLogin";
 import MyInfo from "./pages/MyInfo";
 import styled from"styled-components"
 import testimage from"../src/image/11.jpg"
+import Inputaddress from"./pages/Inputaddress"
+import"./index.css"
 
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
      <Navbar/>
     <Background>
   <Test2>나는 없어질 애</Test2>
-    <Test1> <Routes>
+    <Test1 className="box"> 
+    <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
         <Route path="/chat" element={<Chat />} />
@@ -28,6 +31,7 @@ function App() {
         <Route path="/write" element={<Write />} />
         <Route path="/myinfo" element={<MyInfo />} />
         <Route path="/firstlogin" element={<FirstLogin />} />
+        <Route path="/Inputaddress" element={<Inputaddress />} />
       </Routes>
       </Test1>
   </Background>
@@ -66,6 +70,7 @@ const Test2 = styled.div`
 
 `
 const Test1=styled.div`
+overflow: auto;
 @media screen and (max-width: 900px){
   width: 400px;
   margin-right:0px;
