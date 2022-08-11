@@ -11,6 +11,7 @@ import FirstLogin from "./pages/FirstLogin";
 import MyInfo from "./pages/MyInfo";
 import styled from"styled-components"
 import testimage from"../src/image/11.jpg"
+import Enter from "./pages/Enter";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/write" element={<Write />} />
         <Route path="/myinfo" element={<MyInfo />} />
         <Route path="/firstlogin" element={<FirstLogin />} />
+        <Route path="/enter" element={<Enter />} />
       </Routes>
       </Test1>
   </Background>

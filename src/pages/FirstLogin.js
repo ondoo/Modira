@@ -95,8 +95,9 @@ const FirstLogin = () => {
           />
           🔍︎
         </InputBox>
-        <input type="checkbox"></input>
-        <label htmlFor="cheese">(필수) 개인정보 취급방침에 동의합니다.</label>
+        <label>
+          <input type="checkbox"/>(필수) 개인정보 취급방침에 동의합니다.
+        </label>
         <div>보기</div>
         <ButtonSubmit>등록완료</ButtonSubmit>
       </LoginBox>
