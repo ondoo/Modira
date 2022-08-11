@@ -18,24 +18,23 @@ import"./index.css"
 function App() {
   return (
     <>
-     <Navbar/>
-    <Background>
-  <Test2>나는 없어질 애</Test2>
-    <Test1 className="box"> 
-    <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/detail/:postId" element={<Detail />} />
-        <Route path="/post" element={<Post />} />
-        <Route path="/write" element={<Write />} />
-        <Route path="/myinfo" element={<MyInfo />} />
-        <Route path="/firstlogin" element={<FirstLogin />} />
-        <Route path="/Inputaddress" element={<Inputaddress />} />
-      </Routes>
-      </Test1>
-  </Background>
-   
+      <Background>
+        <Test2>나는 없어질 애</Test2>
+        <Test1 className="box">
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/detail/:postId" element={<Detail />} />
+            <Route path="/post" element={<Post />} />
+            <Route path="/write" element={<Write />} />
+            <Route path="/myinfo" element={<MyInfo />} />
+            <Route path="/firstlogin" element={<FirstLogin />} />
+            <Route path="/Inputaddress" element={<Inputaddress />} />
+          </Routes>
+        </Test1>
+      </Background>
      
     </>
   );
@@ -45,7 +44,7 @@ export default App;
 
 const Background = styled.div`
 width: 100%;
-height: 500px;
+height: 100vh;
 background-image: url(${testimage});
 background-repeat: no-repeat;
 background-size:  100%;
@@ -65,10 +64,11 @@ const Test2 = styled.div`
   
 }
   width: 40%;
-  height: 100%;
+  height: 100vh;
   background-color: blue;
 
 `
+
 const Test1=styled.div`
 overflow: auto;
 @media screen and (max-width: 900px){
@@ -77,8 +77,9 @@ overflow: auto;
 
 
 }
-  width: 400px;
-  height: 100%;
+  overflow: auto;
+  width: 521px;
+  height: 887px;
   background: white;
   margin-right:50px;
 
