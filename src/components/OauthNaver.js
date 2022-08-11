@@ -5,7 +5,7 @@
 // 틀 : "https://kauth.kakao.com/oauth/authorize?client_id={REST_API_KEY}&redirect_uri={REDIRECT_URI}&response_type=code"
 // 다 넣은거 : "https://kauth.kakao.com/oauth/authorize?client_id={ddb938f8fed6079e90564fca875e2903}&redirect_uri={localhost:3000/oauth/callback/kakao}&response_type=code"
 
-const CLIENT_ID = "9USIXCYT8MOvNYRxfZVs";
+const CLIENT_ID = process.env.REACT_APP_NAVER_KEY;
 const CALLBACK_URL = "http://localhost:3000/"
 const STATE = 'state'
 
