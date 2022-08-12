@@ -52,7 +52,6 @@ const Mapgps = () => {
                 console.log(place)// 수빈님이 이용할 수 있는 정보
                 
             });
-           
         }
 
 
