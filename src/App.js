@@ -12,6 +12,9 @@ import MyInfo from "./pages/MyInfo";
 import styled from"styled-components"
 import testimage from"../src/image/11.jpg"
 import Enter from "./pages/Enter";
+import Inputaddress from"./pages/Inputaddress"
+import"./index.css"
+
 
 
 function App() {
@@ -30,11 +33,11 @@ function App() {
         <Route path="/myinfo" element={<MyInfo />} />
         <Route path="/firstlogin" element={<FirstLogin />} />
         <Route path="/enter" element={<Enter />} />
+        <Route path="/Inputaddress" element={<Inputaddress />} />
       </Routes>
       </Test1>
   </Background>
-   
-     
+  
     </>
   );
 }
@@ -43,7 +46,7 @@ export default App;
 
 const Background = styled.div`
 width: 100%;
-height: 500px;
+height: 100vh;
 background-image: url(${testimage});
 background-repeat: no-repeat;
 background-size:  100%;
@@ -63,19 +66,22 @@ const Test2 = styled.div`
   
 }
   width: 40%;
-  height: 100%;
+  height: 100vh;
   background-color: blue;
 
 `
+
 const Test1=styled.div`
+overflow: auto;
 @media screen and (max-width: 900px){
   width: 400px;
   margin-right:0px;
 
 
 }
-  width: 400px;
-  height: 100%;
+  overflow: auto;
+  width: 521px;
+  height: 887px;
   background: white;
   margin-right:50px;
 
