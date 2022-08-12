@@ -11,31 +11,33 @@ import FirstLogin from "./pages/FirstLogin";
 import MyInfo from "./pages/MyInfo";
 import styled from"styled-components"
 import testimage from"../src/image/11.jpg"
+import Enter from "./pages/Enter";
 import Inputaddress from"./pages/Inputaddress"
 import"./index.css"
+
 
 
 function App() {
   return (
     <>
-      <Background>
-        <Test2>나는 없어질 애</Test2>
-        <Test1 className="box">
-          <Navbar/>
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/chat" element={<Chat />} />
-            <Route path="/detail/:postId" element={<Detail />} />
-            <Route path="/post" element={<Post />} />
-            <Route path="/write" element={<Write />} />
-            <Route path="/myinfo" element={<MyInfo />} />
-            <Route path="/firstlogin" element={<FirstLogin />} />
-            <Route path="/Inputaddress" element={<Inputaddress />} />
-          </Routes>
-        </Test1>
-      </Background>
-     
+     <Navbar/>
+    <Background>
+  <Test2>나는 없어질 애</Test2>
+    <Test1> <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/detail/:postId" element={<Detail />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/write" element={<Write />} />
+        <Route path="/myinfo" element={<MyInfo />} />
+        <Route path="/firstlogin" element={<FirstLogin />} />
+        <Route path="/enter" element={<Enter />} />
+        <Route path="/Inputaddress" element={<Inputaddress />} />
+      </Routes>
+      </Test1>
+  </Background>
+  
     </>
   );
 }
